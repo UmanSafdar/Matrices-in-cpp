@@ -1,43 +1,48 @@
 #include <iostream>
 using namespace std;
 
-
-int main()
+void myfun(int array_A[2][2], int array_B[2][2], int result[2][2])
 {
-	int row,col,sum;
-	cout<<"Enter rows\n";
-	cin>>row;
-	cout<<"Enter Col\n";
-	cin>>col;
-    int array[row][col];
-    cout<<"Enter elements in array"<<endl;
-    
-        for(int i=0; i<row; i++)
-		{
-			for(int j=0; j<col; j++)
-			{
-			
-			
-			cin>>array[i][j];
-				}
-			}
-		sum=0;
-			 for(int i=0; i<row;i++)
-		{
-			for(int j=0; j<col; j++)
-			{
-			
-			
-			sum+=array[i][j];
-				}
-			}
-		
-					
-    
-    
-cout<<"The Sum is:" <<sum<<endl;
 
-        
-  return 0;
-
+  					for(int i=0; i<2; i++)
+  					{
+  						for(int j=0; j<2; j++)
+  						{
+  							result[i][j]=array_A[i][j] + array_B[i][j];
+  							cout<<" ";
+						  }
+						cout<<endl;
+ 	
 }
+}
+void printfun(int result[2][2])
+{
+	for(int i=0; i<2; i++)
+  					{
+  						for(int j=0; j<2; j++)
+  						{
+  							cout<<result[i][j];
+  							cout<<" ";
+						  }
+						  cout<<endl;
+}
+}
+
+int main() {
+  int array_A[2][2]={{1,2},{3,4}};
+  int array_B[2][2]={{1,2},{3,4}};
+  int result[2][2];
+  myfun(array_A, array_B, result);
+  cout<<"Array_A:"<<endl;
+  printfun(array_A);
+  cout<<"Array_B"<<endl;
+  printfun(array_B);
+  cout<<"Addition Result:"<<endl;
+  printfun(result); 
+   return 0;
+  
+  
+}
+  
+ 
+
