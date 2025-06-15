@@ -9,11 +9,26 @@ const int COLS = 2;
 void addMatrices(int matrix1[ROWS][COLS], int matrix2[ROWS][COLS], int result[ROWS][COLS]) {
     
 	// Function implementation will go here
+	
+for (int i=0; i<ROWS; i++)
 
+	{
+		for (int j=0; j<COLS; j++)
+		
+		{
+		
+		result[i][j] = matrix1[i][j] + matrix2[i][j];
+		
+	cout<<result[i][j]<<" ";
+		
 }
 
-;
+cout<<endl;
+	
+	
+	}	
 
+}
 
 
 int main() {
@@ -30,25 +45,30 @@ int main() {
     
     int result[ROWS][COLS]= {{0, 0}, {0, 0}};
 
-    cout << "Test Case 1: Both matrices contain negative numbers" << endl;
+    cout << "Test Case 1: Both matrices contain negative numbers\n" << endl;
+    
     addMatrices(matrix1, matrix2, result);
     
     if (result[0][0]==expected[0][0] 
 	
 	&&
+	
 	result[0][1]==expected[0][1]
 	
 	&&
+	
 	result[1][0]==expected[1][0]
 	
 	&&
-	result[1][1]==expected[1][1])
+	
+	result[1][1]==expected[1][1] )
+	
 	{
-        cout << "Test Case is Passed" << endl;
+        cout << "\nTest Case is Passed\n" << endl;
     } 
 	
 	else {
-        cout << "Test Case is Failed" << endl;
+        cout << "Test Case is Failed\n" << endl;
        
     }
     
@@ -62,26 +82,31 @@ int main() {
     
     int result1[ROWS][COLS]= {{0, 0}, {0, 0}};
 
-    cout << "Test Case 2: Both matrices contain positive numbers" << endl;
+    cout << "Test Case 2: Both matrices contain positive numbers\n" << endl;
+    
     addMatrices(matrix3, matrix4, result1);
     
     if (result1[0][0]==expected1[0][0] 
 	
 	&&
+	
 	result1[0][1]==expected1[0][1]
 	
 	&&
+	
 	result1[1][0]==expected1[1][0]
 	
 	&&
+	
 	result1[1][1]==expected1[1][1])
+	
 	{
-        cout << "Test Case is Passed" << endl;
+        cout << "\nTest Case is Passed\n" << endl;
     } 
 	
 	else {
-        cout << "Test Case is Fail" << endl;
-       
+		
+        cout << "\nTest Case is Fail" << endl;
     }
     
 //Test Case 3
@@ -94,26 +119,30 @@ int main() {
     
     int result2[ROWS][COLS]= {{0, 0}, {0, 0}};
 
-    cout << "Test Case 3: Matrix 1 contain positive and matrix 2 contain negative numbers" << endl;
-    addMatrices(matrix4, matrix5, result2);
+    cout << "Test Case 3: Matrix 1 contain positive and matrix 2 contain negative numbers\n" << endl;
+    
+    addMatrices(matrix5, matrix6, result2);
     
     if (result2[0][0]==expected2[0][0] 
 	
 	&&
+	
 	result2[0][1]==expected2[0][1]
 	
 	&&
+	
 	result2[1][0]==expected2[1][0]
 	
 	&&
-	result2[1][1]==expected2[1][1])
+	
+	result2[1][1]==expected2[1][1] )
 	{
-        cout << "Test Case is Passed" << endl;
+        cout << "\n\nTest Case is Passed" << endl;
     } 
 	
 	else {
-        cout << "Test Case is Fail" << endl;
-       
+		
+        cout << "Test Case is Fail\n" << endl; 
     }
     
 //Test Case 4
@@ -126,25 +155,30 @@ int main() {
     
     int result3[ROWS][COLS]= {{0, 0}, {0, 0}};
 
-    cout << "Test Case 4: Matrix 1 contain negative and matrix 2 contain positive numbers" << endl;
+    cout << "Test Case 4: Matrix 1 contain negative and matrix 2 contain positive numbers\n" << endl;
+    
     addMatrices(matrix7, matrix8, result3);
     
     if (result3[0][0]==expected3[0][0] 
 	
 	&&
+	
 	result3[0][1]==expected3[0][1]
 	
 	&&
+	
 	result3[1][0]==expected3[1][0]
 	
 	&&
-	result3[1][1]==expected3[1][1])
+	
+	result3[1][1]==expected3[1][1] )
+	
 	{
-        cout << "Test Case is Passed" << endl;
+        cout << "\nTest Case is Passed\n" << endl;
     } 
 	
 	else {
-        cout << "Test Case is Fail" << endl;
+        cout << "Test Case is Fail\n" << endl;
        
     }
     
@@ -158,25 +192,30 @@ int main() {
     
     int result4[ROWS][COLS]= {{0, 0}, {0, 0}};
 
-    cout << "Test Case 5: Both matrix and empty" << endl;
+    cout << "Test Case 5: Both matrix and empty \n" << endl;
+    
     addMatrices(matrix9, matrix10, result4);
     
     if (result4[0][0]==expected4[0][0] 
 	
 	&&
+	
 	result4[0][1]==expected4[0][1]
 	
 	&&
+	
 	result4[1][0]==expected4[1][0]
 	
 	&&
-	result4[1][1]==expected4[1][1])
+	
+	result4[1][1]==expected4[1][1] )
+	
 	{
-        cout << "Test Case is Passed" << endl;
+        cout << "\nTest Case is Passed\n" << endl;
     } 
 	
 	else {
-        cout << "Test Case is Fail" << endl;
+        cout << "\nTest Case is Fail\n" << endl;
        
     }
     
@@ -185,5 +224,3 @@ int main() {
 
     return 0;
 }
- 
-
